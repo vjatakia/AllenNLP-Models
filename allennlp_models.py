@@ -47,9 +47,9 @@ def get_predictor(args):
         raise Exception('the given model must be srl or coref.')
 
     if model_type == 'srl':
-        return Predictor.from_archive(archive, 'semantic-role-labeling'),model_type;
+        return Predictor.from_archive(archive, 'semantic-role-labeling'),model_type
     if model_type == 'coref':
-        return Predictor.from_archive(archive, 'coreference-resolution'),model_type;
+        return Predictor.from_archive(archive, 'coreference-resolution'),model_type
 
 
 def run(predictor,
